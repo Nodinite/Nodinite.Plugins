@@ -3,11 +3,35 @@
   <PropertyGroup>
     <TargetFrameworks>net46;net5.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>NodiniteCodeSigningCert.pfx</AssemblyOriginatorKeyFile>
+    <Company>Nodinite, SE556784-8881</Company>
+    <Authors>Nodinite</Authors>
+    <Product>Nodinite Plugins</Product>
+    <Description>This library contains the core functions to build plugins to use with Nodinite</Description>
+    <Copyright></Copyright>
+    <Version>5.3.0</Version>
+    <PackageTags>Plugin</PackageTags>
+    <PackageReleaseNotes>Create the framework for new plugin types</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/Nodinite/Nodinite.Plugins</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>Nodinite.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\Resources\Nodinite.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
